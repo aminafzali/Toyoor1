@@ -1,22 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/flatcloud"
+    tools:context=".activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="584dp"
-        android:text="Hello World!"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.86"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.82" />
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_for_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/noColor"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/noColor"
+        >
+    <FrameLayout
+        android:id="@+id/frame_gozareshha"
+        android:background="@color/noColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingId" />
 
-</android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue1"
+        android:layout_alignParentTop="true">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue1"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/nemoodar_btn"
+            android:layout_width="@dimen/nav_size"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/nemoodar_Image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_chart"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/nemoodar_txt"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="نمودارها"
+                android:textSize="@dimen/nav_txt_size"
+                android:gravity="center_horizontal"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gozaresh_btn"
+            android:layout_width="@dimen/nav_size"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/gozaresh_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_gozaresh"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/gozaresh_txt"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="گزارشات"
+                android:textSize="@dimen/nav_txt_size"
+                android:gravity="center_horizontal"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/nav_size"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_sabte_gozaresh"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="ثبت"
+                android:textSize="@dimen/nav_txt_size"
+                android:gravity="center_horizontal"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/nav_size"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_shopping"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="خرید"
+                android:textSize="@dimen/nav_txt_size"
+                android:gravity="center_horizontal"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hesab"
+            android:layout_width="@dimen/nav_size"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_account"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="حساب"
+                android:textSize="@dimen/nav_txt_size"
+                android:gravity="center_horizontal"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_for_fragments"
+        android:background="@color/noColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingId" />
+
+</RelativeLayout>

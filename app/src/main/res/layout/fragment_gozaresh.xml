@@ -1,14 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_gozareshha"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/flatcloud2"
     tools:context=".Fragments.GozareshFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:ignore="UselessParent">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent">
+
+           <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+               xmlns:tools="http://schemas.android.com/tools"
+               android:id="@+id/cardView"
+               android:layout_width="wrap_content"
+               android:layout_height="60dp"
+               android:layoutDirection="rtl"
+               android:orientation="horizontal"
+               android:background="@color/black"
+               tools:ignore="UnusedAttribute">
+
+               <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                   xmlns:tools="http://schemas.android.com/tools"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layoutDirection="rtl"
+                   tools:ignore="UnusedAttribute">
+
+                   <View
+                       android:layout_width="@dimen/line_size"
+                       android:layout_height="match_parent"
+                       android:layout_marginRight="@dimen/margin_very_small"
+                       android:background="@color/noColor"/>
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:text="تاریخ : "
+                       tools:ignore="HardcodedText" />
+
+                   <View
+                       android:layout_width="@dimen/line_size"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="@dimen/margin_very_small"
+                       android:layout_marginRight="@dimen/margin_very_small"
+                       android:background="@drawable/line_shape"/>
+
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:text="سن جوجه : "
+                       tools:ignore="HardcodedText" />
+
+
+                   <View
+                       android:layout_width="@dimen/line_size"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="@dimen/margin_very_small"
+                       android:layout_marginRight="@dimen/margin_very_small"
+                       android:background="@drawable/line_shape"/>
+
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:text="تلفات : "
+                       tools:ignore="HardcodedText" />
+
+                   <View
+                       android:layout_width="@dimen/line_size"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="@dimen/margin_very_small"
+                       android:layout_marginRight="@dimen/margin_very_small"
+                       android:background="@drawable/line_shape"/>
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:text="نوع دارو : "
+                       tools:ignore="HardcodedText" />
+
+                   <View
+                       android:layout_width="@dimen/line_size"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="@dimen/margin_very_small"
+                       android:layout_marginRight="@dimen/margin_very_small"
+                       android:background="@drawable/line_shape"/>
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:text="نوع دان مصرفی : "
+                       tools:ignore="HardcodedText" />
+
+                   <View
+                       android:layout_width="@dimen/line_size"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="@dimen/margin_very_small"
+                       android:layout_marginRight="@dimen/margin_very_small"
+                       android:background="@drawable/line_shape"/>
+
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:text="مقدار دان مصرفی : "
+                       tools:ignore="HardcodedText" />
+
+                   <View
+                       android:layout_width="3dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="@dimen/margin_very_small"
+                       android:layout_marginRight="@dimen/margin_very_small"
+                       android:background="@drawable/line_shape"/>
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:text="میانگین وزن : "
+                       tools:ignore="HardcodedText" />
+
+                   <View
+                       android:layout_width="3dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="@dimen/margin_very_small"
+                       android:layout_marginRight="@dimen/margin_very_small"
+                       android:background="@drawable/line_shape"/>
+
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:text="مصرف کل دان : "
+                       tools:ignore="HardcodedText" />
+
+                   <View
+                       android:layout_width="3dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="@dimen/margin_very_small"
+                       android:layout_marginRight="@dimen/margin_very_small"
+                       android:background="@drawable/line_shape"/>
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:text="دمای سالن : "
+                       tools:ignore="HardcodedText" />
+
+                   <View
+                       android:layout_width="3dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="@dimen/margin_very_small"
+                       android:layout_marginRight="@dimen/margin_very_small"
+                       android:background="@drawable/line_shape"/>
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:text="تعداد فروش : "
+                       tools:ignore="HardcodedText" />
+
+                   <View
+                       android:layout_width="3dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="@dimen/margin_very_small"
+                       android:layout_marginRight="@dimen/margin_very_small"
+                       android:background="@drawable/line_shape"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:baselineAligned="false"
+                       android:gravity="center"
+                       android:text="تعداد ورودی : "
+                       tools:ignore="HardcodedText" />
+
+                   <View
+                       android:layout_width="3dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="@dimen/margin_very_small"
+                       android:layout_marginRight="@dimen/margin_very_small"
+                       android:background="@drawable/line_shape"/>
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_height="match_parent"
+                       android:gravity="center"
+                       android:text="باقیمانده : "
+                       tools:ignore="HardcodedText" />
+
+                   <View
+                       android:layout_width="3dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="@dimen/margin_very_small"
+                       android:background="@color/noColor"/>
+
+               </LinearLayout>
+
+           </android.support.v7.widget.CardView>
+
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/recycler_view_gozaresh"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:scrollbars="vertical" />
+
+       </LinearLayout>
+
+    </HorizontalScrollView>
 
 </FrameLayout>

@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.amin.test.R;
+import com.example.amin.toyoor.R;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_very_small">5dp</dimen>
+    <dimen name="line_size">3dp</dimen>
+    <dimen name="nav_size">60dp</dimen>
+    <dimen name="nav_txt_size">10sp</dimen>
+</resources>
